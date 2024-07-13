@@ -1,10 +1,13 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class Marks extends JFrame  {
+public class Marks extends JFrame  implements ActionListener {
     String roll;
+    JButton back;
     public  Marks(String roll){
         this.roll = roll;
         setLayout(null);
@@ -93,11 +96,24 @@ public class Marks extends JFrame  {
         }
 
 
+        back = new JButton("Back");
+        back.setBounds(150,380,100,20);
+        back.addActionListener(this);
+        add(back);
+
         setVisible(true);
         setBounds(500,50,500,600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
     public static void main(String[] args) {
         new Marks("");
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == back){
+            setVisible(false);
+            new Project();
+        }
     }
 }

@@ -181,7 +181,7 @@ public class AddStudent extends JFrame implements ActionListener {
             try {
                 c.s.executeUpdate(query);
                 JOptionPane.showMessageDialog(null,"Insertion Done Successfully");
-                setVisible(false);
+//                setVisible(false);
             } catch (SQLException ex) {
                 throw new RuntimeException(ex);
             }

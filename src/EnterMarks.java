@@ -125,6 +125,7 @@ public class EnterMarks extends JFrame implements ActionListener {
             JOptionPane.showMessageDialog(null,"Successful");
         }else {
             setVisible(false);
+            new Project();
             setDefaultCloseOperation(EXIT_ON_CLOSE);
         }
     }

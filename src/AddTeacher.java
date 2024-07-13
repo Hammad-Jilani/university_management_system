@@ -103,7 +103,7 @@ public class AddTeacher extends JFrame implements ActionListener {
         add(designation);
 
 
-        JLabel lblClass12 = new JLabel("Class XII (%) :");
+        JLabel lblClass12 = new JLabel("Department :");
         lblClass12.setBounds(100,240,100,30);
         lblClass12.setFont(new Font("serif",Font.PLAIN,16));
         add(lblClass12);

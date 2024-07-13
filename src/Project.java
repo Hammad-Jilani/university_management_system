@@ -211,6 +211,9 @@ public class Project extends JFrame implements ActionListener {
             new FeeStructure();
             setVisible(false);
             setDefaultCloseOperation(EXIT_ON_CLOSE);
+        } else if (e.getActionCommand() == "Student fee form") {
+            new PayFee();
+            setVisible(false);
         }
     }
 }
